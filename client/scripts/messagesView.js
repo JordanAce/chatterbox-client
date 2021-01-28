@@ -1,16 +1,15 @@
 var MessagesView = {
 
+
   $chats: $('#chats'),
 
   initialize: function() {
 
   },
 
-  renderMessage: function(userMessage) {
-    console.log('test');
+  renderMessage: function(templatedString) {
 
-    $("#chats").append(userMessage);
-
+    $('#chats').append(templatedString);
   }
 
 };

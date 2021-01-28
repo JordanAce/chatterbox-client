@@ -22,8 +22,11 @@ var App = {
     Parse.readAll((data) => {
       // examine the response from the server request:
       console.log(data);
-      console.log(data.results[0].text);
-      MessagesView.renderMessage(data);
+      for (var i = 0; i < data.results.length; i++) {
+        if (data.results[i].username !== undefined && data.results[i].text !== undefined) {
+          MessagesView.renderMessage(MessageView.render(data.results[i]));
+        }
+      }
       callback();
     });
   },
