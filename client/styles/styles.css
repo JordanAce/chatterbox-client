@@ -1,25 +1,27 @@
 body {
-    background: #eee;
+    background:rgb(40, 22, 83);
     text-align: center;
     padding: 0 25px;
     font-family: arial, sans-serif;
 }
 
 #main, #chats {
-    width: 500px;
+    width: 900px;
     margin: auto;
     text-align: left;
-    background: white;
+    background: rgb(130, 175, 126);
     padding: 50px 60px;
-    border: solid #ddd;
+    border: solid rgb(3, 3, 3);
     border-width: 0 1px 1px 1px;
 }
 
 #main h1 {
     margin-top: 0;
-    font-size: 35px;
+    font-size: 50px;
     margin-bottom: 5px;
     padding: 5px;
+    color: #013e5c;
+    text-shadow:#013e5c
 }
 
 #main h1 span {
@@ -50,6 +52,8 @@ form {
     padding: 20px;
     padding-left: 0;
     margin-bottom: 20px;
+
+
 }
 
 form input[type=text] {
@@ -62,7 +66,7 @@ form input[type=text] {
 .chat {
     padding: 5px;
     margin-bottom: 5px;
-    background-color: #eee;
+    background-color: #ddd;
 }
 
 .chat .username {
@@ -70,7 +74,7 @@ form input[type=text] {
 }
 
 .chat:hover {
-    background-color: #ddd;
+    background-color: rgb(185, 184, 184);
 }
 
 .spinner {
@@ -88,3 +92,8 @@ form input[type=text] {
     background-color: #0090da;
 }
 
+.emblem {
+    height: 50px;
+    width: 50px;
+
+}
