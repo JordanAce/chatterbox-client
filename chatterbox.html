@@ -27,8 +27,9 @@
       <div class="spinner"><img src="client/images/spiffygif_46x46.gif"></div>
       <div id="rooms">
         Room:
-        <select></select>
-        <button>Add Room</button>
+        <select name = "rooms" id = "rooms">
+        </select>
+        <button onClick="window.RoomsView.renderRoom();">Add Room</button>
       </div>
       <form action="#" id="send" method="post">
         <input type="text" name="message" id="message"/>

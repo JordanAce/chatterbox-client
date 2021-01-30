@@ -4,3 +4,5 @@
 **/lib
 **/vendor
 **/*.min.js
+**/roomsView.js
+**/formView.js

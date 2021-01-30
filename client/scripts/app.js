@@ -21,7 +21,8 @@ var App = {
       // examine the response from the server request:
       console.log(data);
       for (var i = 0; i < data.results.length; i++) {
-        if (data.results[i].username !== undefined && data.results[i].text !== undefined) {
+        if (data.results[i].username !== undefined && data.results[i].text !== undefined && data.results[i].roomname !== undefined) {
+          //if room = currentRoom
           MessagesView.renderMessage(MessageView.render(data.results[i]));
         }
       }
