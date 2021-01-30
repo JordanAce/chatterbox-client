@@ -6,3 +6,4 @@
 **/*.min.js
 **/roomsView.js
 **/formView.js
+**/rooms.js
